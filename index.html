@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/picture.jpg" alt="Srivardhini Reddy S" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Srivardhini Reddy S">Srivardhini Reddy S</h1>
+
+          <p class="title">Data Scientist</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:srivardhinireddy@gmail.com" class="contact-link">srivardhinireddy@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+19452448937" class="contact-link">+1 (945) 244-8937</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2000-07-02">July 2, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Dallas, Texas, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/srivardhinireddy/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/srivardhini.reddy/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/vardhini0207" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/srivardhini_reddy/?hl=en" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          
+
+          
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="nav nav-tabs">
+
+          <li class="nav-item">
+            <a class="nav-link " id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="blog-tab" data-toggle="tab" href="#blog" role="tab" aria-controls="blog" aria-selected="false">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <div class="tab-content" id="myTabContent">
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <div class="tab-pane fade in active" id="about" role="tabpanel" aria-labelledby="about">
+
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Welcome to my Data Science Project Portfolio!
+
+          </p>
+          <p>
+            As a data enthusiast with a background in biotechnology and a Master's in Data Science, my journey in the data field has been nothing short of exhilarating. I've had the privilege of applying data-driven methodologies to a myriad of contexts, spanning biotechnology, supply chain optimization, spend analytics, construction management, and investment strategies.
+
+          </p>
+          <p>
+            My diverse experiences have not only broadened my horizons but also honed my skills in extracting actionable insights from data. Join me on this expedition through a spectrum of data-driven projects, where we explore the dynamic interplay of data and its profound impact on diverse industries.
+          </p>
+          <p>
+            Together, we'll delve into the art of turning complex data into valuable knowledge, just as I've done in my journey. Let's embark on this data-driven adventure and discover the limitless possibilities that data science has to offer! 
+
+          </p>
+        </section>
+      </div>
+
+
+
+
+
+
+
+      <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume">
+
+      <!--
+        - #RESUME
+      -->
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Texas, Dallas</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Master of Science, Business Analytics, Data Science Cohort<br>
+                Deans Excellence New Student Cohort Scholarship, Microsoft Student Ambassador<br>
+                GPA 3.8/4
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Institute of Technology, Warangal</h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                Bachelor of Technology, Biotechnology<br>
+                Relevant Courses: Problem Solving and Computer Programming, Biocomputing, Bioinformatics<br>
+                GPA 8/2/10
+              </p>
+
+      
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> CBRE - Data Science and Analytics Intern</h4>
+
+              <span>June 2023 — Present</span>
+
+              <p class="timeline-text">
+                • Developed a budget prediction model using XGBoost regressor, Random Forest regressor, and Neural networks for Asset data, achieving a commendable 89% R-square value.<br>
+                • Designed and implemented a user-friendly dashboard and UI to enhance data visualization.<br>
+                • Utilized Regrid and Local Logic database APIs to efficiently retrieve and analyze site data and demographic information, supporting data-driven decision-making.<br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Fractal AI - Data Science Intern</h4>
+
+              <span>May 2021 — Aug 2021</span>
+
+              <p class="timeline-text">
+                • Conducted extensive market research on Spend Analytics and Accounts Payables solutions.<br>
+                • Extracted data from Snowflake schema presented the analysis on an extensive PowerBI dashboard.<br>
+                • Generated insights on tail and maverick spend that can cut annual expenditures by 5-10% on average.
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+
+        
+
+
+
+      
+
+
+
+      </div>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio">
+
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+              <a href="https://github.com/srivardhini-reddy/Fraud-Detection-and-strategy-using-Classification/blob/main/Credit%20risk%20project%20presentation.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="Fraud Detection and strategy using Classification" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fraud Detection and strategy using Classification</h3>
+
+                <p class="project-category">
+                  • Developed a credit card strategy by comparing XGBoost and Neural Network models on historical data.<br>
+                  • Chose XGBoost as the final model due to superior performance with AUC of 0.93.<br>
+                  • Determined conservative and aggressive strategies based on model output to achieve desired default rate and revenue balance.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://sanatan-shrivastava.github.io/scrutinyCBRE/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Scrutiny" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Scrutiny - Sentiment analysis to gauge Customer Experience</h3>
+
+                <p class="project-category">
+                  •Proficiently conducted web scraping from Zillow and Trustpilot to obtain real-world data.<br>
+                  •Expertly preprocessed data to eliminate biases and duplicates.<br>
+                  •Conducted Sentiment Analysis and presented consumer sentiment insights through a dashboard with tailored KPIs and metrics.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/srivardhini-reddy/Analyzing-Conagra-s-Sales-Data-Insights-and-Time-Series/blob/main/Presentation6.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Conagra" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Analyzing Conagra's Sales Data: Insights and Time Series</h3>
+
+                <p class="project-category">•	Analyzed Conagra's table spreads sales data, comparing loyalty and performance against competitors.<br>
+                  •	Identified the largest buyer group as middle-class, retired, and married females and recommended tailored marketing strategies. Recommended promoting 16-ounce Stick-form products to improve sales.<br>
+                  •	Performed time-series analysis on sales data to predict sales for 2024 and 2025
+                  </p>
+
+              </a>
+            </li>
+
+            
+
+            
+
+          </ul>
+
+        </section>
+
+      </div>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+      <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog">
+
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/pulse/my-summer-internship-cbre-srivardhini-reddy%3FtrackingId=aAIH24VGTj%252BRXCgK7AwStQ%253D%253D/?trackingId=aAIH24VGTj%2BRXCgK7AwStQ%3D%3D">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Experiences</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Aug, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Internship Summary - CBRE</h3>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://nitw-bclub.medium.com/draft-eia-2020-and-its-impact-on-our-economy-environment-and-us-c3b6146ec792">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">World Events</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jan, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">DRAFT EIA 2020 and its impact on our Economy, Environment and Us</h3>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://nitw-bclub.medium.com/can-political-instability-lead-to-the-downfall-of-a-country-venezuela-4475fb44c3f7">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">World Events</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dec, 2020</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Can Political Instability lead to the downfall of a Country? (Venezuela)</h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          
+
+          </ul>
+
+        </section>
+
+      </div>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+
+
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="mailto:srivardhinireddy@gmail.com" method="post" enctype="text/plain" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+        
+
+      </div>
+
+    </div>
+  </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
